@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
-from supabase_cliendt import supabase
+from supabase_client import supabase
 from models.schemas import Shops
 
-router = APIRouter(prefix="api/shops", tags=["Shops"])
+router = APIRouter(prefix="/api/shops", tags=["Shops"])
 
 @router.get("/")
 def get_shops():
